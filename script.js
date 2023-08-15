@@ -20,3 +20,25 @@ closeIcon.addEventListener('click', function() {
 	overlay.classList.remove('show-overlay');
 })
 
+let questionField = document.querySelectorAll('.questions-form-item');
+let dropInfo = document.querySelectorAll('.drop-info');
+let treangle = document.querySelectorAll('.treangle');
+
+for (var i = 0; i < 5; i++) {
+	let currentField = questionField[i];
+	let currentDropInfo = dropInfo[i];
+	let currentTreangle = treangle[i];
+
+	currentField.addEventListener('click', function(){
+		if (!currentField.classList.contains('questions-form-item-drop')) {
+			currentDropInfo.classList.add('drop');
+			currentField.classList.add('questions-form-item-drop');
+			currentTreangle.classList.add('treangle-rotate');
+		} 
+		else {
+			currentDropInfo.classList.remove('drop');
+			currentField.classList.remove('questions-form-item-drop');
+			currentTreangle.classList.remove('treangle-rotate');
+		}
+	})
+}
