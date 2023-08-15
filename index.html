@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,30 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="popup-menu">
+		<img src="images/close_icon.svg" alt="" class="close-icon">
+		<p class="main-heading">Заказать аудит</p>
+		<form action="#">
+			<div class="form-item">
+				<p class="copyright">URL-адрес проекта:</p>
+				<input type="text" class="popup-menu-field">
+			</div>
+			<div class="form-item">
+				<p class="copyright">Электронная почта для связи:</p>
+				<input type="text" class="popup-menu-field">
+			</div>
+			<div class="form-item">
+				<p class="copyright">Как вас зовут:</p>
+				<input type="text" class="popup-menu-field">
+			</div>
+			<div class="form-item">
+				<p class="copyright">Кратко опишите проект и его задачи:</p>
+				<textarea name="#" cols="30" rows="10" class="popup-menu-field" id="textarea"></textarea>
+			</div>
+			<input type="submit" value="Отправить запрос" class="submit-button">
+		</form>
+	</div>
+	<div class="overlay"></div>
 	<header>
 		<div class="container">
 			<img src="images/Bitmap.svg" alt="UX Laboratory" class="bitmap">
@@ -16,7 +40,7 @@
 				<div class="header-desc-text">
 					<h1 class="main-heading">Эффективно выявляем <br>проблемы юзабилити</h1>
 					<p class="regular-text audit-text">Много лет помогаем мелкому и среднему бизнесу в построении цифровых сервисов без изъянов, которые мешают пользователям достигать своих целей, а бизнесу ключевых показателей.</p>
-					<a href="#" class="button">Заказать аудит</a>
+					<div class="button">Заказать аудит</div>
 				</div>
 				<img src="images/Group.svg" alt="" class="header-desc-img">
 			</div>
@@ -112,7 +136,7 @@
 		<div class="container">
 			<div class="footer-block">
 				<p class="copyright">© 2022 «UX Laboratory»</p>
-				<a href="#" class="button footer-button">Заказать аудит</a>
+				<div class="button" id="footer-button">Заказать аудит</div>
 			</div>
 		</div>
 	</footer>

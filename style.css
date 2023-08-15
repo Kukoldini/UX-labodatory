@@ -49,6 +49,7 @@ h1 {
 	text-align: center;
 }
 .button {
+	cursor: pointer;
 	display: block;
 	width: 196px;
 	height: 38px;
@@ -235,6 +236,75 @@ footer {
 	font-weight: 500;
 	align-items: center;
 }
-.footer-button {
+#footer-button {
 	margin: 0;
+}
+
+
+/*Popup menu*/
+.popup-menu {
+	left: -680px;
+	transition: 0.3s;
+	position: fixed;
+	z-index: 100;
+	background-color: #FFF;
+	width: 600px;
+	padding: 10px 30px 80px 40px;
+}
+.close-icon {
+	cursor: pointer;
+	position: absolute;
+	right: 54px;
+	top: 40px;
+	z-index: 110;
+}
+.popup-menu-field {
+	height: 35px;
+	width: 95%;
+	border: 1px solid #C7C7C7;
+	border-radius: 4px;
+	font-size: 25px;
+}
+#textarea {
+	height: 100px;
+}
+.submit-button {
+	cursor: pointer;
+	font-size: 18px;
+	margin-top: 15px;
+	height: 56px;
+	border: none;
+	border-radius: 6px;
+	width: 96%;
+	background-color: #86B900;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #fff;
+}
+.submit-button:hover {
+	transition: 0.3s;
+	background-color: #9EDB00;
+}
+.overlay {
+	transition: 0.2s;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: none;
+}
+.show {
+	left: 0;
+}
+.show-overlay {
+	display: block;
+}
+.hide-overlay {
+	display: none;
+}
+.hide {
+	left: -680px;
 }
